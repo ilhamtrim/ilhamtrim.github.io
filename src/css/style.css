@@ -1,0 +1,80 @@
+body {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+}
+
+.navbar-brand {
+    font-weight: 500;
+}
+
+.mnavbar {
+    background-color: #ffffff;
+    color: #0d6efd ;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    height: 4.1rem;
+    border-top-style: solid;
+    border-color: #0d6efd;
+}
+
+.mnavbar i {
+    font-size: 25px;
+}
+
+.mnavbar p {
+    font-size: 12px;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: #e2edff;
+    border-bottom-left-radius:30px ;
+    border-bottom-right-radius:30px ;
+    line-height: 0.5cm;
+}
+
+.jumbotron img {
+    border-radius: 50%;
+}
+
+.jumbotron h1 {
+    font-weight: 700;
+    padding-top: 1rem;
+   
+}
+
+.jumbotron p {
+    font-weight: 400;
+    color:#000;
+    ;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+.info   {
+    margin-top: 4rem;
+}
+
+.project {
+    padding-top: 4rem;
+    background-color: #e2edff;
+}
+
+.project h2 {
+    padding-bottom: 2rem;
+}
+
+.project .card {
+    margin-bottom: 2rem;
+}
+
+.contact h2 {
+    padding-top: 4rem;
+    padding: 2rem;
+}
+
+footer a {
+    text-decoration: none;
+}
