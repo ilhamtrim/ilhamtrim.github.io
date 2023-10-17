@@ -3,18 +3,23 @@ body {
     font-weight: 400;
 }
 
+.navbar {
+    color: #393939;
+    backdrop-filter: blur(4px);
+    background-color: #ffffffc0;
+}
 .navbar-brand {
     font-weight: 500;
 }
 
 .mnavbar {
-    background-color: #ffffff;
-    color: #0d6efd ;
+    background-color: #ffffff8f;
+    color: #000000 ;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
-    height: 4.1rem;
-    border-top-style: solid;
-    border-color: #0d6efd;
+    height: 4rem;
+    backdrop-filter: blur(4px);
+
 }
 
 .mnavbar i {
@@ -23,13 +28,13 @@ body {
 
 .mnavbar p {
     font-size: 12px;
+    font-weight: 500;
+    padding-top: -2rem;
 }
 
 .jumbotron {
     padding-top: 6rem;
-    background-color: #e2edff;
-    border-bottom-left-radius:30px ;
-    border-bottom-right-radius:30px ;
+    background-image: url(/src/img/bg-jumbotron.jpg);
     line-height: 0.5cm;
 }
 
@@ -40,13 +45,31 @@ body {
 .jumbotron h1 {
     font-weight: 700;
     padding-top: 1rem;
+    color: #ffae00;
    
 }
 
 .jumbotron p {
     font-weight: 400;
-    color:#000;
+    color:#fff;
     ;
+}
+
+.jumbotron a {
+    font-size: 30px;
+    padding-left: 1rem;
+    color: #fff;
+}
+
+.jumbotron a:hover {
+    color: #514d4d;
+    transition: ease;
+    transition-duration: 0.5ms;
+}
+
+.jumbotron h5 {
+    padding-top: 2rem;
+    color: #fff;
 }
 
 section {
@@ -55,11 +78,34 @@ section {
 
 .info   {
     margin-top: 4rem;
+    position: relative;
+    z-index: 999;
+}
+
+.info i {
+    font-size: 3rem;
+}
+
+.info img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
 }
 
 .project {
     padding-top: 4rem;
-    background-color: #e2edff;
+    background-color: #f2f2f2;
+}
+
+.project a {
+    background-color: #000000;
+    color: #fff;
+    font-weight: 500;
+}
+
+.project a:hover {
+    background-color: #656565;
+    color: #fff;
 }
 
 .project h2 {
@@ -75,6 +121,22 @@ section {
     padding: 2rem;
 }
 
+.contact .btn-kirim {
+    background-color: #000000;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact .btn-kirim:hover {
+    background-color: #686868;
+    color: #fff;
+    font-weight: 500;
+}
+
 footer a {
     text-decoration: none;
+}
+
+footer {
+    background-color: #a1a1a1;
 }
