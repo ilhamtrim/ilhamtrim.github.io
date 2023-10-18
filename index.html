@@ -18,18 +18,18 @@
     <!-- ====== Font Awesome Icon =========== -->
     <script src="https://kit.fontawesome.com/d6add9fde3.js" crossorigin="anonymous"></script>
   </head>
-  <body id="home">
+  <body>
     <!-- ================ Navbar ===================== -->
-    <nav class="navbar navbar-expand-lg shadow fixed-top">
+      <nav class="navbar navbar-expand-lg shadow fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">iProject</a>
           <button class="navbar-toggler d-none d-md-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbarNav collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#info">Info</a>
@@ -44,12 +44,14 @@
           </div>
         </div>
       </nav>
+ 
+    
 <!-- ==================== Bottom Nav Mobile ================= -->
 <!-- Mobile Navbar -->
 <nav class="mnavbar navbar-expand d-md-none d-lg-none d-xl-none fixed-bottom shadow-lg">
     <ul class="navbar-nav nav-justified w-100">
         <li class="nav-item">
-            <a href="#home" class="nav-link"><i class="bi bi-house-door-fill"></i>
+            <a href="#home" class="nav-link active"><i class="bi bi-house-door-fill"></i>
             <p>Home</p></a>
         </li>
         <li class="nav-item">
@@ -68,8 +70,8 @@
 </nav>
   <!-- End of Mobile Nav -->
     <!-- ================ Jumbotron ================== -->
-    <section class="jumbotron text-center">
-            <img src="src/img/me-green.PNG" alt="iham" width="200px" class="img-thumbnail shadow">
+    <section class="jumbotron text-center" id="home">
+            <img src="src/img/me-green.PNG" alt="ilham" width="200px" class="img-thumbnail shadow">
             <h1 class="display-4 ">Ilham Tri Maulana</h1>
             <p class="lead">Front-End Developer</p>
             <h5 class="text-center">Stay Connected With Me</h5>
@@ -215,33 +217,7 @@
     <script>
     AOS.init();
 </script>
-<!-- ============== Contact Form to Spreadsheet ================ -->
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby_kgFevvLdNlsJF0ANnbJLwWlmnbDWrCy40XuMnG200mXzzDL_N0-YfjyclUtdG2e5/exec'
-    const form = document.forms['iproject-contact-form']
-    const btnKirim = document.querySelector('.btn-kirim');
-    const btnLoading = document.querySelector('.btn-loading');
-    const myAlert = document.querySelector('.my-alert')
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-    //   Ketika tombol submit diclick
-    // tampilkan tombol loading , tampilkan tombol kirim
-    btnLoading.classList.toggle('d-none');
-    btnKirim.classList.toggle('d-none');
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            // tampilkan tombol kirim , hilangkan tombol loading
-            btnLoading.classList.toggle('d-none');
-            btnKirim.classList.toggle('d-none');
-            // Tampilkan alert
-            myAlert.classList.toggle('d-none')
-            // Reset Form
-            form.reset();
-            console.log('Success!', response)
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+<script src="src/js/contact.js"></script>
+  <script src="src/js/main.js"></script>
   </body>
 </html>

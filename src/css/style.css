@@ -8,19 +8,26 @@ body {
     backdrop-filter: blur(4px);
     background-color: #ffffffc0;
 }
+
+.navbar .active {
+    font-weight: 700;
+
+}
+
 .navbar-brand {
     font-weight: 500;
 }
 
 .mnavbar {
     background-color: #ffffff8f;
-    color: #000000 ;
+    color: #393939 ;
     border-top-right-radius: 30px;
     border-top-left-radius: 30px;
     height: 4rem;
     backdrop-filter: blur(4px);
 
 }
+
 
 .mnavbar i {
     font-size: 25px;
