@@ -123,6 +123,10 @@ section {
     margin-bottom: 2rem;
 }
 
+.project .card img {
+    
+}
+
 .contact h2 {
     padding-top: 4rem;
     padding: 2rem;
@@ -145,5 +149,5 @@ footer a {
 }
 
 footer {
-    background-color: #a1a1a1;
+    background-color: #ffae00;
 }
